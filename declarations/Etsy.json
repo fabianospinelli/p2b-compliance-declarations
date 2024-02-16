@@ -1,0 +1,36 @@
+{
+  "name": "Etsy",
+  "documents": {
+    "Marketplace Sellers Conditions": {
+      "fetch": "https://www.etsy.com/legal/sellers/",
+      "select": [
+        {
+          "startAfter": "#category-dropdown",
+          "endBefore": "#locale_overlay_container"
+        }
+      ]
+    },
+    "Ranking Parameters Description": {
+      "fetch": "https://www.etsy.com/legal/policy/search-advertisement-ranking-disclosures/899478564529",
+      "select": [
+        "#content"
+      ],
+      "remove": [
+        ".sub-page-heading",
+        "#category-dropdown"
+      ]
+    },
+    "Platform to Business Notice": {
+      "fetch": "https://help.etsy.com/hc/en-gb/articles/360051541413",
+      "select": [
+        ".article"
+      ],
+      "remove": [
+        ".related-articles",
+        ".article-votes",
+        ".wt-display-none"
+      ],
+      "executeClientScripts": true
+    }
+  }
+}

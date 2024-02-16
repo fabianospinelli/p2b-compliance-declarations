@@ -1,0 +1,20 @@
+{
+  "name": "Tripadvisor",
+  "documents": {
+    "Terms of Service": {
+      "fetch": "https://tripadvisor.mediaroom.com/ie-terms-of-use",
+      "select": [
+        "#wd_printable_content"
+      ],
+      "remove": [
+        "#wd_printable_content .wd_toolbar"
+      ]
+    },
+    "Ranking Parameters Description": {
+      "fetch": "https://www.tripadvisor.com/pages/serviceEN.html",
+      "select": [
+        "#BODYCON"
+      ]
+    }
+  }
+}

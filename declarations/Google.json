@@ -1,0 +1,32 @@
+{
+  "name": "Google",
+  "documents": {
+    "Terms of Service": {
+      "fetch": "https://policies.google.com/terms?hl=en-US",
+      "select": [
+        {
+          "startBefore": "#toc-intro",
+          "endBefore": "[data-tracker-id]"
+        }
+      ],
+      "remove": [
+        "[role=\"navigation\"]"
+      ]
+    },
+    "Ranking Parameters Description": {
+      "fetch": "https://www.google.com/search/howsearchworks/algorithms/",
+      "select": [
+        {
+          "startBefore": "#hero",
+          "endBefore": ".explore-cards"
+        }
+      ]
+    },
+    "Business Mediation Policy": {
+      "fetch": "https://support.google.com/legal/answer/9792937?hl=en-GB",
+      "select": [
+        ".page"
+      ]
+    }
+  }
+}

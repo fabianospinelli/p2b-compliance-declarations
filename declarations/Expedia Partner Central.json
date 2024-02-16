@@ -1,0 +1,15 @@
+{
+  "name": "Expedia Partner Central",
+  "documents": {
+    "Commercial Terms": {
+      "fetch": "https://welcome.expediagroup.com/legal/European_supply_agreements.pdf",
+      "select": [
+        ".fds-main-content"
+      ],
+      "remove": [
+        ".fds-page-actions",
+        ".fds-trigger-menu-overflow"
+      ]
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "eBay",
+  "documents": {
+    "Imprint": {
+      "fetch": "https://www.ebay.ie/pages/help/policies/legal-imprint.html",
+      "select": [
+        ".HelpContent"
+      ],
+      "remove": [
+        ".anchorTop"
+      ]
+    },
+    "Terms of Service": {
+      "fetch": "https://www.ebay.com/help/policies/member-behaviour-policies/user-agreement?id=4259",
+      "select": [
+        ".article_body"
+      ],
+      "remove": [
+        ".expand_collapse_list:last-child"
+      ],
+      "executeClientScripts": true
+    }
+  }
+}

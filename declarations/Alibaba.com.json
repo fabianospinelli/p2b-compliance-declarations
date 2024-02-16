@@ -1,0 +1,22 @@
+{
+  "name": "Alibaba.com",
+  "documents": {
+    "Marketplace Sellers Conditions": {
+      "fetch": "https://rulechannel.alibaba.com/icbu?type=detail&ruleId=2042&cId=1303#/rule/detail?ruleId=2042&cId=1303",
+      "select": [
+        ".rule-detail-text"
+      ],
+      "remove": [
+        ".evalutaion",
+        ".rule-text-indicate"
+      ],
+      "executeClientScripts": true
+    },
+    "Premium Partner Conditions": {
+      "fetch": "https://terms.alicdn.com/legal-agreement/terms/suit_bu1_b2b/suit_bu1_b2b201906251608_13446.html",
+      "select": [
+        ".agreementpreview"
+      ]
+    }
+  }
+}

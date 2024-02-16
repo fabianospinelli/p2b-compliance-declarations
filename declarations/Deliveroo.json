@@ -1,0 +1,34 @@
+{
+  "name": "Deliveroo",
+  "documents": {
+    "Terms of Service": {
+      "fetch": "https://restaurants.deliveroo.com/en-ie/terms",
+      "select": [
+        {
+          "startBefore": "#delivery",
+          "endBefore": "#basic"
+        }
+      ]
+    },
+    "Complaints Policy": {
+      "fetch": "https://help.deliveroo.com/en/articles/4239076-deliveroo-s-partner-support-policy",
+      "select": [
+        ".section__article"
+      ],
+      "remove": [
+        ".intercom-reaction-picker",
+        ".breadcrumb",
+        ".avatar__image"
+      ]
+    },
+    "Marketplace Sellers Conditions": {
+      "fetch": "https://help.deliveroo.com/en/collections/1866797-7-policies-for-restaurants",
+      "select": [
+        ".collection__meta"
+      ],
+      "remove": [
+        ".avatar"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Skyscanner",
+  "documents": {
+    "Commercial Terms": {
+      "fetch": "https://www.skyscanner.net/media/ltdterms",
+      "select": [
+        ".content"
+      ]
+    },
+    "Platform to Business Notice": {
+      "fetch": "https://www.skyscanner.net/media/regulation-2019-1150-platform-to-business-regulation",
+      "select": [
+        ".content"
+      ]
+    },
+    "Business Privacy Policy": {
+      "fetch": "https://www.partners.skyscanner.net/privacy-policy",
+      "select": [
+        ".body-container-wrapper"
+      ]
+    }
+  }
+}

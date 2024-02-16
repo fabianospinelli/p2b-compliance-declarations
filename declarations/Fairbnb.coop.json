@@ -1,0 +1,20 @@
+{
+  "name": "Fairbnb.coop",
+  "documents": {
+    "Terms of Service": {
+      "fetch": "https://fairbnb.coop/terms-of-use/",
+      "select": [
+        "#main-content"
+      ],
+      "filter": [
+        "unifyEmailProtectedAddresses"
+      ]
+    },
+    "Privacy Policy": {
+      "fetch": "https://fairbnb.coop/privacy-statement/",
+      "select": [
+        "#main-content"
+      ]
+    }
+  }
+}

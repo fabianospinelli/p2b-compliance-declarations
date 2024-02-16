@@ -1,0 +1,35 @@
+{
+  "name": "Airbnb",
+  "documents": {
+    "Commercial Terms": {
+      "fetch": "https://www.airbnb.com/help/article/2870/additional-terms-for-experience-hosts",
+      "select": [
+        {
+          "startBefore": "#site-content",
+          "endBefore": "section > h2"
+        }
+      ],
+      "executeClientScripts": true
+    },
+    "Ranking Parameters Description": {
+      "fetch": "https://www.airbnb.com/help/article/39/how-search-results-work",
+      "select": [
+        {
+          "startBefore": "#site-content h1",
+          "endBefore": "[data-testid=\"article-feedback-widget\"]"
+        }
+      ],
+      "executeClientScripts": true
+    },
+    "Terms of Service": {
+      "fetch": "https://www.airbnb.com/help/article/2908/terms-of-service",
+      "select": [
+        {
+          "startBefore": "#EUTOS",
+          "endAfter": "#site-content"
+        }
+      ],
+      "executeClientScripts": true
+    }
+  }
+}

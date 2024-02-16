@@ -1,0 +1,17 @@
+{
+  "name": "AlloVoisins",
+  "documents": {
+    "Terms of Service": {
+      "fetch": "https://www.allovoisins.com/page/conditions-generales-de-vente-et-d-utilisation",
+      "select": [
+        ".cgu"
+      ]
+    },
+    "Ranking Parameters Description": {
+      "fetch": "https://www.allovoisins.com/page/referencement",
+      "select": [
+        ".cgu"
+      ]
+    }
+  }
+}

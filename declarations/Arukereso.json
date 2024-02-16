@@ -1,0 +1,17 @@
+{
+  "name": "Árukereső",
+  "documents": {
+    "Terms of Service": {
+      "fetch": "https://www.arukereso.hu/static/general_terms_and_conditions.html",
+      "select": [
+        "#static-page"
+      ]
+    },
+    "Ad Publishing Policy": {
+      "fetch": "https://www.arukereso.hu/static/productads_uzleti_feltetelek.html",
+      "select": [
+        "#static-page"
+      ]
+    }
+  }
+}
